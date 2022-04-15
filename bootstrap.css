@@ -1,0 +1,239 @@
+:root{
+    --white: rgb(253, 253, 253);
+    --gray: rgb(182, 176, 176);
+}
+html{
+    scroll-behavior: smooth;
+}
+.bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(./image/head-2.jpg)center/cover fixed no-repeat;
+    /* animation-name: movement; */
+    transition: all 2s ease;
+    animation-duration: 10s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    padding: 0 0.9rem;
+
+}
+.click{
+    padding: 5px 0.8rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: var(--white);
+    justify-content: space-between!important;
+    align-items: center;
+    background: rgb(109, 107, 107);
+    font-family: -apple-system,  'Segoe UI', Roboto, Ubuntu,;
+}
+
+@keyframes movement{
+    0%{
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50%{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+
+}
+/* nav bar animation */
+
+@keyframes navBar{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.full{
+    width: 100vw;
+    height: 100vh;
+    background: var(--white);
+}
+
+.move{
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.next{
+    font-size: 2rem;
+    font-family: cursive;
+    background: lightcoral;
+    border-radius: 50%;
+}
+.next:hover{
+    background: var(--gray);
+    color: lightpink;
+}
+.push{
+    margin-top: 13rem;
+}
+.size{
+    max-height: 2592px;
+}
+
+/*////////////////////// javascript class /////////////////*/
+
+.height{
+    height: 100px;
+    flex-direction: column;
+}
+.navShow{
+    display: block;
+}
+/*///////////////////////////////////////////////////////////////////////////////// end of javascript classes */
+
+
+
+/* media querys */
+/*  for smaller screen */
+@media(max-width: 576px){
+    .logo{
+        padding: 1rem 0;
+    }
+    .bar-wrapper{
+        display: block;
+        height: 200px;
+        margin-left: 1rem;
+         animation-name: navBar; 
+        transition: all 2s ease;
+        transition: all 2s linear;
+        animation-duration: 5s;
+        animation-delay: 5s;
+        animation-iteration-count: infinite;
+        overflow: hidden;
+    }
+    nav{
+        display: none;
+
+    }
+    .second-item{
+        display: none;
+    }
+
+    .showcase-grid{     
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .push{
+        margin-top: 0;
+    }
+    .text h3{ 
+        font-size: 1rem;
+        padding: 0.2rem; 
+    }
+    .text p{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1;
+        color: var(--gray);
+        padding: 0.2rem 0.5rem;
+    }
+    .pull{
+        margin-top: 0;
+    }
+    .showcase-item{
+        margin-bottom: none;
+    }
+    .text{
+        margin-bottom: 0;
+        padding: 0;
+    }
+    /* prodduct media */
+    .product-grid{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .main-showcase{
+        margin-bottom: 0;
+    }
+    .move{
+        margin-bottom: 0;
+    }
+    /* order media */
+    .order{
+        height: 90vh;
+    }
+    .grid-order{
+        grid-template-columns: 1fr;
+    }
+    .order-item h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: none;
+    }
+    .item-image img{
+        margin-top: 0.7rem;
+    }
+
+    .order-item button{
+        padding: 0.2rem 1.5rem;
+        font-weight: 300;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    /* full product media */
+    .review-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .review-text p{
+        padding: 0 20px;
+    }
+
+    /* newsletter section */
+    .newsletter{
+        height: 50vh;
+    }
+    form{
+        margin-left: 1rem;
+    }
+    /* footer scetion */
+
+    footer{
+      height: 50vh;  
+    }
+
+    .main-footer{
+      width: 100%;  
+    }
+
+    .footer-item{
+        margin-bottom: none;
+    }
+}
+
+
+/*  for medium screen */
+@media(max-width: 776px){
+
+}
